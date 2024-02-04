@@ -1,0 +1,41 @@
+-- PUBLIC."Book" definition
+
+-- Drop table
+
+-- DROP TABLE PUBLIC."Book";
+
+CREATE TABLE PUBLIC."Book" (
+	"idBook" INTEGER NOT NULL AUTO_INCREMENT,
+	"isbn" CHARACTER VARYING(13) NOT NULL,
+	"titulo" CHARACTER VARYING(255) NOT NULL,
+	"autor" CHARACTER VARYING(255),
+	"anho" INTEGER,
+	"disponible" BOOLEAN DEFAULT TRUE,
+	"portada" BINARY LARGE OBJECT,
+	CONSTRAINT BOOK_PK PRIMARY KEY ("idBook")
+);
+CREATE UNIQUE INDEX "IdBookPK" ON PUBLIC."Book" ("idBook");
+CREATE INDEX "IdxBookISBN" ON PUBLIC."Book" ("isbn");
+CREATE INDEX "IdxBookTitle" ON PUBLIC."Book" ("titulo");
+CREATE UNIQUE INDEX PRIMARY_KEY_1 ON PUBLIC."Book" ("idBook");
+
+-- PUBLIC."Contido" definition
+
+-- Drop table
+
+-- DROP TABLE PUBLIC."Contido";
+
+CREATE TABLE PUBLIC."Contido" (
+	"idContido" INTEGER NOT NULL AUTO_INCREMENT,
+	"idBook" INTEGER NOT NULL,
+	"contido" CHARACTER LARGE OBJECT,
+	CONSTRAINT "Contido_PK" PRIMARY KEY ("idContido"),
+	CONSTRAINT FK_ID_BOOK PRIMARY KEY ("idBook","idBook")
+);
+CREATE INDEX FK_ID_BOOK_INDEX_9 ON PUBLIC."Contido" ("idBook");
+CREATE UNIQUE INDEX PRIMARY_KEY_9 ON PUBLIC."Contido" ("idContido");
+
+
+-- PUBLIC."Contido" foreign keys
+
+ALTER TABLE PUBLIC."Contido" ADD CONSTRAINT FK_ID_BOOK FOREIGN KEY ("idBook") REFERENCES PUBLIC."Book"("idBook") ON DELETE CASCADE ON UPDATE CASCADE;
