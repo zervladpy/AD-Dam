@@ -2,26 +2,27 @@ package org.zervladpy.models;
 
 import jakarta.persistence.*;
 
-@Entity(name = "coach")
+@Table(name = "coach")
+@Entity(name = "Coach")
 public class Coach {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="coachId")
-    int id;
+    private int id;
 
     @Column(name = "name")
-    String name;
+    private String name;
 
     @Column(name = "bday")
-    String birthday;
+    private String birthday;
 
     @Column(name = "salary")
-    Double salary;
+    private Double salary;
 
     @OneToOne()
     @JoinColumn(name = "idTeam")
-    Team team;
+    private Team team;
 
     public Coach() {}
 

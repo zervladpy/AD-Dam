@@ -21,7 +21,9 @@ public class Main {
 
         teamDAO.insert(t1);
 
-        Coach c1 = new Coach("Ivan", "10/20/2000", 20.0, t1);
+        Coach c1 = new Coach("Ivan", "10/07/2000", 20.0, t1);
+
+        coachDAO.insert(c1);
 
         System.out.println(coachDAO.getById(c1.getId()));
 
