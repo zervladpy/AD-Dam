@@ -1,8 +1,10 @@
 module com.zervlad.appnba {
     requires javafx.controls;
     requires javafx.fxml;
+    requires org.hibernate.orm.core;
+    requires jakarta.persistence;
 
 
-    opens com.zervlad.appnba to javafx.fxml;
-    exports com.zervlad.appnba;
+    exports com.zervlad.appnba.Presentation;
+    opens com.zervlad.appnba.Presentation to javafx.fxml;
 }

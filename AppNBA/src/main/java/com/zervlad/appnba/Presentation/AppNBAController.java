@@ -1,9 +1,9 @@
-package com.zervlad.appnba;
+package com.zervlad.appnba.Presentation;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 
-public class HelloController {
+public class AppNBAController {
     @FXML
     private Label welcomeText;
 

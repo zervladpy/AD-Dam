@@ -1,59 +1,121 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="7403e330-994f-4e7f-b13d-a771f8d45c71" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+    <list default="true" id="7403e330-994f-4e7f-b13d-a771f8d45c71" name="Changes" comment="-a AppNBA">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Local/DAO/DAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Local/Entities/Match.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Local/Entities/Player.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Local/Entities/Statistics.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Local/Entities/Team.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Services/Jakarta/EntityManagerNBA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Utils/Constraints/PersistenceNBAConstraints.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/database/appnba.mv.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/database/appnba.trace.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zervladpy/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zervladpy/daos/CoachDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zervladpy/daos/DAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zervladpy/daos/TeamDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zervladpy/models/Coach.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zervladpy/models/Team.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zervladpy/utils/EntityManagerUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/database/nba.mv.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/database/nba.trace.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Presentation/AppNBA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Presentation/AppNBAController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/zervlad/appnba/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/zervlad/appnba/presentation/main-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseLocalColorSettings">
+    <colors>
+      <entry key="0d797944-f0ac-406b-b0be-bfb98d751c4a" value="Green" />
+    </colors>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;zervladpy&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="9d04bdfe-b6f4-4f6d-a045-48d45abbba52" />
+        <option name="url" value="https://github.com/zervladpy/AD-Dam.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="OptimizeOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 6
 }</component>
   <component name="ProjectId" id="2d3Q2oIvA8MZhLOWBS2kcGm5MCW" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.AppNBA.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Clase/AD-DAM2/AppNBA/src/main/resources/database",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.5423883",
+    "rearrange.code.on.save": "true",
+    "settings.editor.selected.configurable": "actions.on.save",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
-      </set>
-    </attachedChunks>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Clase\AD-DAM2\AppNBA\src\main\resources\com\zervlad\appnba\presentation" />
+      <recent name="D:\Clase\AD-DAM2\AppNBA\src\main\java\com\zervlad\appnba\Core" />
+      <recent name="D:\Clase\AD-DAM2\AppNBA\src\main\java\com\zervlad\appnba\Data\Local" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -64,11 +126,55 @@
       <option name="presentableId" value="Default" />
       <updated>1709234077959</updated>
       <workItem from="1709234078972" duration="63000" />
-      <workItem from="1709234152613" duration="100000" />
+      <workItem from="1709234152613" duration="1532000" />
+      <workItem from="1709235696313" duration="401000" />
+      <workItem from="1709236106298" duration="387000" />
+      <workItem from="1709236503955" duration="671000" />
+      <workItem from="1709237176003" duration="315000" />
+      <workItem from="1709237500983" duration="69000" />
+      <workItem from="1709237586726" duration="1594000" />
+      <workItem from="1709242072812" duration="1858000" />
     </task>
+    <task id="LOCAL-00001" summary="-a AppNBA">
+      <option name="closed" value="true" />
+      <created>1709234314679</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1709234314679</updated>
+    </task>
+    <task id="LOCAL-00002" summary="-a AppNBA">
+      <option name="closed" value="true" />
+      <created>1709234335725</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1709234335725</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="-a AppNBA" />
+    <option name="LAST_COMMIT_MESSAGE" value="-a AppNBA" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
