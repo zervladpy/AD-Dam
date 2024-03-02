@@ -1,8 +1,7 @@
-package com.zervlad.appnba.Core.Services.Jakarta;
+package com.zervlad.appnba.Core.Services;
 
 
 import com.zervlad.appnba.Utils.Constraints.PersistenceNBAConstraints;
-import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
 
@@ -10,7 +9,7 @@ public class EntityManagerNBA {
 
     static private EntityManagerFactory emf;
 
-    static public EntityManagerFactory getEntityManager() {
+    static public EntityManagerFactory getEntityManagerFactory() {
 
         if (emf == null) {
             synchronized (EntityManagerFactory.class) {
