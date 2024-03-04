@@ -4,52 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7403e330-994f-4e7f-b13d-a771f8d45c71" name="Changes" comment="-u setting up entities">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Country/Country.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Division/Division.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Game/GameAPI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Game/GameAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Game/GameDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Game/GameEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Game/GameRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Player/PlayerAPI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Player/PlayerAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Player/PlayerDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Player/PlayerEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Player/PlayerRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Statisitc/Statistic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Statisitc/StatisticAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Team/TeamAPI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Team/TeamAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Team/TeamDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Team/TeamEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Team/TeamRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Interfaces/API.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Interfaces/DAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Repositories/Repository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Requets/ApiRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Services/DependenciesManagerNBA.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Services/GsonManagerNBA.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Utils/Constraints/ApiConstraints.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Utils/Constraints/Urls.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Utils/Enums/Conference.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Utils/Enums/GameStatus.java" afterDir="false" />
+    <list default="true" id="7403e330-994f-4e7f-b13d-a771f8d45c71" name="Changes" comment="-u added di&#10;-u added repository">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Local/DAO/DAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Local/DAO/Player/PlayerDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Local/DAO/Player/PlayerDAOJakarta.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Local/Entities/Match.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Local/Entities/Player.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Local/Entities/Statistics.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Local/Entities/Team.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Services/Jakarta/EntityManagerNBA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Services/EntityManagerNBA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Presentation/AppNBA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Presentation/AppNBA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/zervlad/appnba/presentation/main-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/zervlad/appnba/Presentation/main-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Game/GameAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Game/GameAPI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/database/appnba.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/database/appnba.mv.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/database/appnba.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/database/appnba.trace.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +33,7 @@
     <option name="myRunOnSave" value="true" />
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -83,6 +42,9 @@
     &quot;assignee&quot;: &quot;zervladpy&quot;
   }
 }</component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="9d04bdfe-b6f4-4f6d-a045-48d45abbba52" />
+  </component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -173,7 +135,10 @@
       <workItem from="1709278041369" duration="476000" />
       <workItem from="1709313810388" duration="9159000" />
       <workItem from="1709374027099" duration="13597000" />
-      <workItem from="1709388182992" duration="6776000" />
+      <workItem from="1709388182992" duration="6938000" />
+      <workItem from="1709461324902" duration="38000" />
+      <workItem from="1709485577825" duration="165000" />
+      <workItem from="1709486860124" duration="152000" />
     </task>
     <task id="LOCAL-00001" summary="-a AppNBA">
       <option name="closed" value="true" />
@@ -207,7 +172,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709278511411</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="-u added di&#10;-u added repository">
+      <option name="closed" value="true" />
+      <created>1709397664754</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1709397664754</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,7 +201,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="-a AppNBA" />
     <MESSAGE value="-u setting up entities" />
-    <option name="LAST_COMMIT_MESSAGE" value="-u setting up entities" />
+    <MESSAGE value="-u added di&#10;-u added repository" />
+    <option name="LAST_COMMIT_MESSAGE" value="-u added di&#10;-u added repository" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

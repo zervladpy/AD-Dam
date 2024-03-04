@@ -13,8 +13,8 @@ import java.util.List;
 
 public class GameAPI implements API<GameEntity> {
 
-    private Gson gson;
-    private ApiRequest apiRequest;
+    private final Gson gson;
+    private final ApiRequest apiRequest;
 
     public GameAPI(Gson gson, ApiRequest apiRequest) {
         this.gson = gson;
