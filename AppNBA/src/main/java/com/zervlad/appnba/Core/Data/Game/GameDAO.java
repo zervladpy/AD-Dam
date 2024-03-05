@@ -1,10 +1,13 @@
 package com.zervlad.appnba.Core.Data.Game;
 
-import com.zervlad.appnba.Core.Interfaces.DAO;
+import com.zervlad.appnba.Core.Data.Interfaces.IDAO;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 
-public class GameDAO implements DAO<GameEntity> {
+import java.util.ArrayList;
+import java.util.List;
+
+public class GameDAO implements IDAO<GameEntity> {
 
     private final EntityManagerFactory entityManagerFactory;
 
@@ -33,14 +36,14 @@ public class GameDAO implements DAO<GameEntity> {
     }
 
     @Override
-    public void insertAll(GameEntity[] entities) {
+    public void insertAll(List<GameEntity> entities) {
 
         try (EntityManager em = entityManagerFactory.createEntityManager()) {
 
             em.getTransaction().begin();
 
             for (GameEntity game : entities) {
-                em.persist(game);
+                em.merge(game);
             }
             em.getTransaction().commit();
 
@@ -50,8 +53,8 @@ public class GameDAO implements DAO<GameEntity> {
     }
 
     @Override
-    public GameEntity[] getAll() {
-        return new GameEntity[0];
+    public List<GameEntity> getAll() {
+        return new ArrayList<>();
     }
 
     @Override

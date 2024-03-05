@@ -35,8 +35,8 @@ public class GameAdapter extends TypeAdapter<GameEntity> {
 
                     gameEntity.setDate(new Date(year, month, day));
                 }
-                case "homeTeam" -> gameEntity.setHomeTeam(teamAdapter.read(jsonReader));
-                case "visitorTeam" -> gameEntity.setVisitorTeam(teamAdapter.read(jsonReader));
+                case "homeTeam" -> gameEntity.setHomeTeamEntity(teamAdapter.read(jsonReader));
+                case "visitorTeam" -> gameEntity.setVisitorTeamEntity(teamAdapter.read(jsonReader));
                 case "homeTeamScore" -> gameEntity.setHomeTeamScore(jsonReader.nextInt());
                 case "visitorTeamScore" -> gameEntity.setVisitorTeamScore(jsonReader.nextInt());
                 default -> jsonReader.skipValue();

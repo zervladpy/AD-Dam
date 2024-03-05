@@ -3,16 +3,20 @@ package com.zervlad.appnba.Core.Data.Game;
 import com.zervlad.appnba.Core.Data.Team.TeamEntity;
 import com.zervlad.appnba.Utils.Enums.GameStatus;
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.util.Date;
 
+@Getter
+@Setter
 @Entity(name = "games")
 public class GameEntity {
+
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-
     @Column(name = "date")
     @Temporal(TemporalType.DATE)
     private Date date;
@@ -21,21 +25,28 @@ public class GameEntity {
     @Column(name = "status")
     @Enumerated(EnumType.STRING)
     private GameStatus status;
+
     @Column(name = "period")
     private int period;
+
     @Column(name = "time") // Review this column
     private String time;
+
     @Column(name = "postseason")
     private boolean postseason;
+
     @Column(name = "home_team_score")
     private int homeTeamScore;
+
     @Column(name = "visitor_team_score")
     private int visitorTeamScore;
-    @JoinColumn(name = "home_team")
+
     @ManyToOne
+    @JoinColumn(name = "home_team_id", referencedColumnName = "team_id")
     private TeamEntity homeTeamEntity;
-    @JoinColumn(name = "visitor_team")
+
     @ManyToOne
+    @JoinColumn(name = "visitor_team_id", referencedColumnName = "team_id")
     private TeamEntity visitorTeamEntity;
 
     public GameEntity() {
@@ -52,94 +63,6 @@ public class GameEntity {
         this.homeTeamScore = homeTeamScore;
         this.visitorTeamScore = visitorTeamScore;
         this.homeTeamEntity = homeTeamEntity;
-        this.visitorTeamEntity = visitorTeamEntity;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public Date getDate() {
-        return date;
-    }
-
-    public void setDate(Date date) {
-        this.date = date;
-    }
-
-    public int getSeason() {
-        return season;
-    }
-
-    public void setSeason(int season) {
-        this.season = season;
-    }
-
-    public GameStatus getStatus() {
-        return status;
-    }
-
-    public void setStatus(GameStatus status) {
-        this.status = status;
-    }
-
-    public int getPeriod() {
-        return period;
-    }
-
-    public void setPeriod(int period) {
-        this.period = period;
-    }
-
-    public String getTime() {
-        return time;
-    }
-
-    public void setTime(String time) {
-        this.time = time;
-    }
-
-    public boolean isPostseason() {
-        return postseason;
-    }
-
-    public void setPostseason(boolean postseason) {
-        this.postseason = postseason;
-    }
-
-    public int getHomeTeamScore() {
-        return homeTeamScore;
-    }
-
-    public void setHomeTeamScore(int homeTeamScore) {
-        this.homeTeamScore = homeTeamScore;
-    }
-
-    public int getVisitorTeamScore() {
-        return visitorTeamScore;
-    }
-
-    public void setVisitorTeamScore(int visitorTeamScore) {
-        this.visitorTeamScore = visitorTeamScore;
-    }
-
-    public TeamEntity getHomeTeam() {
-        return homeTeamEntity;
-    }
-
-    public void setHomeTeam(TeamEntity homeTeamEntity) {
-        this.homeTeamEntity = homeTeamEntity;
-    }
-
-    public TeamEntity getVisitorTeam() {
-        return visitorTeamEntity;
-    }
-
-    public void setVisitorTeam(TeamEntity visitorTeamEntity) {
         this.visitorTeamEntity = visitorTeamEntity;
     }
 }

@@ -1,11 +1,14 @@
 package com.zervlad.appnba.Core.Data.Team;
 
-import com.zervlad.appnba.Core.Interfaces.DAO;
+import com.zervlad.appnba.Core.Data.Interfaces.IDAO;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.EntityTransaction;
 
-public class TeamDAO implements DAO<TeamEntity> {
+import java.util.ArrayList;
+import java.util.List;
+
+public class TeamDAO implements IDAO<TeamEntity> {
 
     private final EntityManagerFactory entityManager;
 
@@ -75,7 +78,7 @@ public class TeamDAO implements DAO<TeamEntity> {
     }
 
     @Override
-    public void insertAll(TeamEntity[] entities) {
+    public void insertAll(List<TeamEntity> entities) {
 
         EntityManager em = entityManager.createEntityManager();
         EntityTransaction transaction = em.getTransaction();
@@ -94,9 +97,8 @@ public class TeamDAO implements DAO<TeamEntity> {
     }
 
     @Override
-    public TeamEntity[] getAll() {
-
-        return new TeamEntity[0];
+    public List<TeamEntity> getAll() {
+        return new ArrayList<>();
     }
 
     @Override

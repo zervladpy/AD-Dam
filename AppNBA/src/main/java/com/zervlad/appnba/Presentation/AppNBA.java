@@ -10,10 +10,11 @@ import com.zervlad.appnba.Core.Data.Player.PlayerRepository;
 import com.zervlad.appnba.Core.Data.Team.TeamAPI;
 import com.zervlad.appnba.Core.Data.Team.TeamDAO;
 import com.zervlad.appnba.Core.Data.Team.TeamRepository;
-import com.zervlad.appnba.Core.Requets.ApiRequest;
 import com.zervlad.appnba.Core.Services.DependenciesManagerNBA;
 import com.zervlad.appnba.Core.Services.EntityManagerNBA;
 import com.zervlad.appnba.Core.Services.GsonManagerNBA;
+import com.zervlad.appnba.Utils.Constraints.ApiConstraints;
+import com.zervlad.appnba.Utils.Constraints.Urls;
 import jakarta.persistence.EntityManagerFactory;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -27,18 +28,21 @@ public class AppNBA extends Application {
 
     public static void main(String[] args) throws URISyntaxException, IOException {
 
+        // --- Setup Dependency Injection --- //
         setup();
+
+        // --- Load Data --- //
+        onStartLoadData();
 
         launch();
     }
 
     private static void setup() {
+
+        var apiKey = ApiConstraints.API_KEY_VALUE;
+
         // --- Dependencies Manager --- //
         DependenciesManagerNBA di = DependenciesManagerNBA.getInstance();
-
-        // --- ApiRequest --- //
-        ApiRequest apiRequest = new ApiRequest(); // Using default API key
-        di.addDependency(ApiRequest.class, apiRequest); // Adding dependency to the DI container
 
         // --- GSON --- //
         Gson gson = GsonManagerNBA.getInstance();
@@ -48,23 +52,22 @@ public class AppNBA extends Application {
         EntityManagerFactory entityManagerFactory = EntityManagerNBA.getEntityManagerFactory();
 
         // --- Team Repository --- //
-        TeamAPI teamAPI = new TeamAPI(apiRequest, gson);
+        TeamAPI teamAPI = new TeamAPI(gson, apiKey, Urls.TEAMS);
         TeamDAO teamDAO = new TeamDAO(entityManagerFactory);
-        di.addDependency(TeamRepository.class, new TeamRepository(teamAPI, teamDAO));
+        di.addDependency(TeamRepository.class, new TeamRepository(teamDAO, teamAPI));
 
         // --- Player Repository --- //
 
         PlayerDAO playerDAO = new PlayerDAO(entityManagerFactory);
-        PlayerAPI playerAPI = new PlayerAPI(apiRequest, gson);
-        di.addDependency(PlayerRepository.class, new PlayerRepository(playerAPI, playerDAO));
+        PlayerAPI playerAPI = new PlayerAPI(gson, apiKey, Urls.PLAYERS);
+        di.addDependency(PlayerRepository.class, new PlayerRepository(playerDAO, playerAPI));
 
         // --- Game Repository --- //
         GameDAO gameDAO = new GameDAO(entityManagerFactory);
-        GameAPI gameAPI = new GameAPI(gson, apiRequest);
-        di.addDependency(GameRepository.class, new GameRepository(gameAPI, gameDAO));
+        GameAPI gameAPI = new GameAPI(gson, apiKey, Urls.GAMES);
+        di.addDependency(GameRepository.class, new GameRepository(gameDAO, gameAPI));
 
-        // --- Load Data --- //
-        onStartLoadData();
+
     }
 
     private static void onStartLoadData() {

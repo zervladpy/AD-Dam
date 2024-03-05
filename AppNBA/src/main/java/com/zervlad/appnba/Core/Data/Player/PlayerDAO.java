@@ -1,11 +1,14 @@
 package com.zervlad.appnba.Core.Data.Player;
 
-import com.zervlad.appnba.Core.Interfaces.DAO;
+import com.zervlad.appnba.Core.Data.Interfaces.IDAO;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.EntityTransaction;
 
-public class PlayerDAO implements DAO<PlayerEntity> {
+import java.util.ArrayList;
+import java.util.List;
+
+public class PlayerDAO implements IDAO<PlayerEntity> {
 
     private final EntityManagerFactory entityManagerFactory;
 
@@ -67,21 +70,17 @@ public class PlayerDAO implements DAO<PlayerEntity> {
     }
 
     @Override
-    public void insertAll(PlayerEntity[] entities) {
+    public void insertAll(List<PlayerEntity> entities) {
 
         try (var em = entityManagerFactory.createEntityManager()) {
-
             var transaction = em.getTransaction();
-
             transaction.begin();
 
             for (PlayerEntity player : entities) {
-
-                em.persist(player);
+                em.merge(player);
             }
 
             transaction.commit();
-
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -89,11 +88,9 @@ public class PlayerDAO implements DAO<PlayerEntity> {
     }
 
     @Override
-    public PlayerEntity[] getAll() {
+    public List<PlayerEntity> getAll() {
 
-        EntityManager em = entityManagerFactory.createEntityManager();
-
-        return new PlayerEntity[0];
+        return new ArrayList<>();
     }
 
     @Override
