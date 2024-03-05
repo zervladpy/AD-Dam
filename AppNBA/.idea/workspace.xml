@@ -5,27 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7403e330-994f-4e7f-b13d-a771f8d45c71" name="Changes" comment="-u added di&#10;-u added repository">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Common/API.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Utils/Helpers/AHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Utils/Helpers/AUrlBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Api/API.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Repositories/IRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Utils/Builder/UrlBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Utils/Helpers/AppNBAHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/database/.xdp-appnba.trace.db-6695lS" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Game/GameAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Game/GameIAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Game/GameDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Game/GameIDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Game/GameRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Game/GameIRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Player/PlayerAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Player/PlayerIAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Game/GameAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Game/GameAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Game/GameAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Game/GameAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Game/GameDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Game/GameDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Game/GameEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Game/GameEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Game/GameRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Game/GameRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Player/PlayerAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Player/PlayerAPI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Player/PlayerAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Player/PlayerAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Player/PlayerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Player/PlayerIDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Player/PlayerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Player/PlayerDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Player/PlayerEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Player/PlayerEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Player/PlayerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Player/PlayerIRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Team/TeamAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Team/TeamIAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Team/TeamDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Team/TeamIDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Player/PlayerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Player/PlayerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Team/TeamAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Team/TeamAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Team/TeamDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Team/TeamDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Team/TeamEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Team/TeamEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Team/TeamRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Team/TeamIRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Interfaces/API.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Interfaces/IAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Interfaces/DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Interfaces/IDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Repositories/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Interfaces/IRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Requets/ApiRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Requets/ApiRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Team/TeamRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Team/TeamRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Interfaces/API.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Api/IAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Interfaces/DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Interfaces/IDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Repositories/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Repositories/Repository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Requets/ApiRequest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Presentation/AppNBA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Presentation/AppNBA.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/database/appnba.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/database/appnba.mv.db" afterDir="false" />
@@ -101,13 +105,14 @@
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;Application.AppNBA.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.AppNBA [install:install].executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Clase/AD-DAM2/AppNBA/src/main/resources/database&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/media/MV-Linux/MaquinasVirtuais/a19vladislavz/AD-Dam/AppNBA&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -117,7 +122,7 @@
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.5423883&quot;,
     &quot;rearrange.code.on.save&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;actions.on.save&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -128,6 +133,11 @@
       <recent name="D:\Clase\AD-DAM2\AppNBA\src\main\java\com\zervlad\appnba\Data\Local" />
     </key>
   </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn install:install" />
+    </option>
+  </component>
   <component name="RunManager">
     <configuration name="AppNBA" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.zervlad.appnba.Presentation.AppNBA" />
@@ -136,6 +146,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-78a6f59c" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -161,8 +178,6 @@
       <workItem from="1709461324902" duration="38000" />
       <workItem from="1709485577825" duration="165000" />
       <workItem from="1709486860124" duration="152000" />
-      <workItem from="1709570183954" duration="6640000" />
-      <workItem from="1709653111950" duration="65000" />
     </task>
     <task id="LOCAL-00001" summary="-a AppNBA">
       <option name="closed" value="true" />
@@ -209,6 +224,12 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="executable:docker" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.persistence:jakarta.persistence-api" />
+    <option featureType="dependencySupport" implementationName="java:org.openjfx:javafx-base" />
+    <option featureType="dependencySupport" implementationName="java:org.projectlombok:lombok" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

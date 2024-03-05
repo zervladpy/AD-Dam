@@ -1,6 +1,6 @@
 package com.zervlad.appnba.Core.Data.Team;
 
-import com.zervlad.appnba.Core.Interfaces.IDAO;
+import com.zervlad.appnba.Core.Data.Interfaces.IDAO;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.EntityTransaction;
@@ -8,11 +8,11 @@ import jakarta.persistence.EntityTransaction;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TeamIDAO implements IDAO<TeamEntity> {
+public class TeamDAO implements IDAO<TeamEntity> {
 
     private final EntityManagerFactory entityManager;
 
-    public TeamIDAO(EntityManagerFactory entityManager) {
+    public TeamDAO(EntityManagerFactory entityManager) {
         this.entityManager = entityManager;
     }
 
@@ -98,7 +98,6 @@ public class TeamIDAO implements IDAO<TeamEntity> {
 
     @Override
     public List<TeamEntity> getAll() {
-
         return new ArrayList<>();
     }
 

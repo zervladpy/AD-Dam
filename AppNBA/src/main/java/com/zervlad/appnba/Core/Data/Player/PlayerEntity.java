@@ -5,11 +5,12 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
-@Setter
 @Getter
+@Setter
 @Entity
 @Table(name = "players")
 public class PlayerEntity {
+
     @Id
     @Column(name = "player_id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -26,8 +27,6 @@ public class PlayerEntity {
     private double weight;
     @Column(name = "jersey")
     private String jersey;
-    @Column(name = "college")
-    private String college;
     @Column(name = "country")
     private String country;
     @Column(name = "draft_year")
@@ -36,6 +35,8 @@ public class PlayerEntity {
     private int draftRound;
     @Column(name = "draft_number")
     private int draftNumber;
+    @Column(name = "college")
+    private String college;
     @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.MERGE)
     @JoinColumn(name = "team_id")
     private TeamEntity teamEntity;
@@ -43,7 +44,7 @@ public class PlayerEntity {
     public PlayerEntity() {
     }
 
-    public PlayerEntity(int id, String firstName, String lastName, String position, double height, double weight, String jersey, String college, String country, int draftYear, int draftRound, int draftNumber, TeamEntity teamEntity) {
+    public PlayerEntity(int id, String firstName, String lastName, String position, double height, double weight, String jersey, String country, int draftYear, int draftRound, int draftNumber, String college, TeamEntity teamEntity) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -51,11 +52,12 @@ public class PlayerEntity {
         this.height = height;
         this.weight = weight;
         this.jersey = jersey;
-        this.college = college;
         this.country = country;
         this.draftYear = draftYear;
         this.draftRound = draftRound;
         this.draftNumber = draftNumber;
+        this.college = college;
         this.teamEntity = teamEntity;
     }
+
 }

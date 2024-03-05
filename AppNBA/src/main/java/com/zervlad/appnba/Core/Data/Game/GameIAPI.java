@@ -1,41 +1,16 @@
 package com.zervlad.appnba.Core.Data.Game;
 
 import com.google.gson.Gson;
-import com.google.gson.JsonElement;
-import com.zervlad.appnba.Core.Interfaces.IAPI;
-import com.zervlad.appnba.Core.Requets.ApiRequest;
-import com.zervlad.appnba.Utils.Constraints.Urls;
+import com.zervlad.appnba.Core.Api.API;
 
-import java.io.IOException;
-import java.net.URI;
-import java.net.URISyntaxException;
-import java.util.List;
+public class GameAPI extends API<GameEntity> {
 
-public class GameIAPI implements IAPI<GameEntity> {
 
-    private final Gson gson;
-    private final ApiRequest apiRequest;
-
-    public GameIAPI(Gson gson, ApiRequest apiRequest) {
-        this.gson = gson;
-        this.apiRequest = apiRequest;
+    public GameAPI(Gson gson, String apiKey, String url) {
+        super(gson, apiKey, url, GameEntity[].class);
     }
 
-    @Override
-    public List<GameEntity> getAll() throws URISyntaxException, IOException {
-        URI uri = new URI(Urls.GAMES);
-
-        JsonElement response = apiRequest.get(uri);
-
-        return List.of(gson.fromJson(response.getAsJsonObject().get("data"), GameEntity[].class));
-    }
-
-    @Override
-    public List<GameEntity> getWithParameters(String params) throws URISyntaxException, IOException {
-        URI uri = new URI(Urls.GAMES + "/" + params);
-
-        JsonElement response = apiRequest.get(uri);
-
-        return List.of(gson.fromJson(response, GameEntity[].class));
+    public GameAPI(String apiKey, String url) {
+        super(apiKey, url, GameEntity[].class);
     }
 }

@@ -1,4 +1,4 @@
-package com.zervlad.appnba.Core.Interfaces;
+package com.zervlad.appnba.Core.Data.Interfaces;
 
 import java.util.List;
 

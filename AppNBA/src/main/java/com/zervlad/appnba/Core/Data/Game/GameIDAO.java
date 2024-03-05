@@ -1,17 +1,17 @@
 package com.zervlad.appnba.Core.Data.Game;
 
-import com.zervlad.appnba.Core.Interfaces.IDAO;
+import com.zervlad.appnba.Core.Data.Interfaces.IDAO;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class GameIDAO implements IDAO<GameEntity> {
+public class GameDAO implements IDAO<GameEntity> {
 
     private final EntityManagerFactory entityManagerFactory;
 
-    public GameIDAO(EntityManagerFactory entityManagerFactory) {
+    public GameDAO(EntityManagerFactory entityManagerFactory) {
         this.entityManagerFactory = entityManagerFactory;
     }
 
@@ -43,7 +43,7 @@ public class GameIDAO implements IDAO<GameEntity> {
             em.getTransaction().begin();
 
             for (GameEntity game : entities) {
-                em.persist(game);
+                em.merge(game);
             }
             em.getTransaction().commit();
 
@@ -54,7 +54,7 @@ public class GameIDAO implements IDAO<GameEntity> {
 
     @Override
     public List<GameEntity> getAll() {
-        return new ArrayList<>(); // TODO
+        return new ArrayList<>();
     }
 
     @Override
