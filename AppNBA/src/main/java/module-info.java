@@ -4,7 +4,7 @@ module com.zervlad.appnba {
     requires org.hibernate.orm.core;
     requires jakarta.persistence;
     requires com.google.gson;
-
+    requires static lombok;
 
     exports com.zervlad.appnba.Presentation;
     opens com.zervlad.appnba.Presentation to javafx.fxml;
@@ -22,5 +22,6 @@ module com.zervlad.appnba {
     exports com.zervlad.appnba.Core.Services;
     exports com.zervlad.appnba.Core.Interfaces;
     exports com.zervlad.appnba.Utils.Enums;
+    exports com.zervlad.appnba.Utils.Helpers;
 
 }

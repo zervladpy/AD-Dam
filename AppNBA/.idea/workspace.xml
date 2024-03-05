@@ -5,9 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7403e330-994f-4e7f-b13d-a771f8d45c71" name="Changes" comment="-u added di&#10;-u added repository">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Common/API.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Utils/Helpers/AHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Utils/Helpers/AUrlBuilder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Game/GameAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Game/GameAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Game/GameAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Game/GameIAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Game/GameDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Game/GameIDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Game/GameRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Game/GameIRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Player/PlayerAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Player/PlayerIAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Player/PlayerAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Player/PlayerAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Player/PlayerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Player/PlayerIDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Player/PlayerEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Player/PlayerEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Player/PlayerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Player/PlayerIRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Team/TeamAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Team/TeamIAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Team/TeamDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Team/TeamIDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Team/TeamEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Team/TeamEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Team/TeamRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Data/Team/TeamIRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Interfaces/API.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Interfaces/IAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Interfaces/DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Interfaces/IDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Repositories/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Interfaces/IRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Requets/ApiRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Core/Requets/ApiRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Presentation/AppNBA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zervlad/appnba/Presentation/AppNBA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/database/appnba.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/database/appnba.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/database/appnba.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/database/appnba.trace.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,6 +161,8 @@
       <workItem from="1709461324902" duration="38000" />
       <workItem from="1709485577825" duration="165000" />
       <workItem from="1709486860124" duration="152000" />
+      <workItem from="1709570183954" duration="6640000" />
+      <workItem from="1709653111950" duration="65000" />
     </task>
     <task id="LOCAL-00001" summary="-a AppNBA">
       <option name="closed" value="true" />

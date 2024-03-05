@@ -1,15 +1,15 @@
 package com.zervlad.appnba.Presentation;
 
 import com.google.gson.Gson;
-import com.zervlad.appnba.Core.Data.Game.GameAPI;
-import com.zervlad.appnba.Core.Data.Game.GameDAO;
-import com.zervlad.appnba.Core.Data.Game.GameRepository;
-import com.zervlad.appnba.Core.Data.Player.PlayerAPI;
-import com.zervlad.appnba.Core.Data.Player.PlayerDAO;
-import com.zervlad.appnba.Core.Data.Player.PlayerRepository;
-import com.zervlad.appnba.Core.Data.Team.TeamAPI;
-import com.zervlad.appnba.Core.Data.Team.TeamDAO;
-import com.zervlad.appnba.Core.Data.Team.TeamRepository;
+import com.zervlad.appnba.Core.Data.Game.GameIAPI;
+import com.zervlad.appnba.Core.Data.Game.GameIDAO;
+import com.zervlad.appnba.Core.Data.Game.GameIRepository;
+import com.zervlad.appnba.Core.Data.Player.PlayerIAPI;
+import com.zervlad.appnba.Core.Data.Player.PlayerIDAO;
+import com.zervlad.appnba.Core.Data.Player.PlayerIRepository;
+import com.zervlad.appnba.Core.Data.Team.TeamIAPI;
+import com.zervlad.appnba.Core.Data.Team.TeamIDAO;
+import com.zervlad.appnba.Core.Data.Team.TeamIRepository;
 import com.zervlad.appnba.Core.Requets.ApiRequest;
 import com.zervlad.appnba.Core.Services.DependenciesManagerNBA;
 import com.zervlad.appnba.Core.Services.EntityManagerNBA;
@@ -48,20 +48,20 @@ public class AppNBA extends Application {
         EntityManagerFactory entityManagerFactory = EntityManagerNBA.getEntityManagerFactory();
 
         // --- Team Repository --- //
-        TeamAPI teamAPI = new TeamAPI(apiRequest, gson);
-        TeamDAO teamDAO = new TeamDAO(entityManagerFactory);
-        di.addDependency(TeamRepository.class, new TeamRepository(teamAPI, teamDAO));
+        TeamIAPI teamAPI = new TeamIAPI(apiRequest, gson);
+        TeamIDAO teamDAO = new TeamIDAO(entityManagerFactory);
+        di.addDependency(TeamIRepository.class, new TeamIRepository(teamAPI, teamDAO));
 
         // --- Player Repository --- //
 
-        PlayerDAO playerDAO = new PlayerDAO(entityManagerFactory);
-        PlayerAPI playerAPI = new PlayerAPI(apiRequest, gson);
-        di.addDependency(PlayerRepository.class, new PlayerRepository(playerAPI, playerDAO));
+        PlayerIDAO playerDAO = new PlayerIDAO(entityManagerFactory);
+        PlayerIAPI playerAPI = new PlayerIAPI(apiRequest, gson);
+        di.addDependency(PlayerIRepository.class, new PlayerIRepository(playerAPI, playerDAO));
 
         // --- Game Repository --- //
-        GameDAO gameDAO = new GameDAO(entityManagerFactory);
-        GameAPI gameAPI = new GameAPI(gson, apiRequest);
-        di.addDependency(GameRepository.class, new GameRepository(gameAPI, gameDAO));
+        GameIDAO gameDAO = new GameIDAO(entityManagerFactory);
+        GameIAPI gameAPI = new GameIAPI(gson, apiRequest);
+        di.addDependency(GameIRepository.class, new GameIRepository(gameAPI, gameDAO));
 
         // --- Load Data --- //
         onStartLoadData();
@@ -70,8 +70,8 @@ public class AppNBA extends Application {
     private static void onStartLoadData() {
         DependenciesManagerNBA di = DependenciesManagerNBA.getInstance();
 
-        di.getDependency(TeamRepository.class).getAll();
-        di.getDependency(PlayerRepository.class).getAll();
+        di.getDependency(TeamIRepository.class).getAll();
+        di.getDependency(PlayerIRepository.class).getAll();
         // di.getDependency(GameRepository.class).getAll();
     }
 

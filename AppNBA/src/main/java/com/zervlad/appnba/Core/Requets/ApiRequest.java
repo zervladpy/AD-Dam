@@ -1,6 +1,6 @@
 package com.zervlad.appnba.Core.Requets;
 
-import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import com.google.gson.stream.JsonReader;
 import com.zervlad.appnba.Utils.Constraints.ApiConstraints;
@@ -31,7 +31,7 @@ public class ApiRequest {
         this.apiKey = apiKey;
     }
 
-    public JsonElement get(URI uri) throws IOException {
+    public JsonObject get(URI uri) throws IOException {
         URLConnection request = uri.toURL().openConnection();
         request.setRequestProperty(ApiConstraints.API_KEY_NAME, apiKey);
         request.setRequestProperty("Content-Type", "application/json");
@@ -40,8 +40,7 @@ public class ApiRequest {
         JsonReader jsonReader = new JsonReader(new InputStreamReader((InputStream) request.getContent()));
         jsonReader.setLenient(true);
 
-        return JsonParser.parseReader(jsonReader).getAsJsonObject().get("data");
-
+        return JsonParser.parseReader(jsonReader).getAsJsonObject();
     }
 
 }
