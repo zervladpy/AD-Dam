@@ -2,10 +2,13 @@ package com.zervlad.tallerpaco.Core.Entities.Car;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Embeddable;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Getter@Setter
+@NoArgsConstructor @AllArgsConstructor
+@Getter @Setter
 @Embeddable
 public class CarDetails {
     @Column(name = "color")
@@ -14,4 +17,5 @@ public class CarDetails {
     private String plate;
     @Column(name = "mileage")
     private int mileage;
+
 }

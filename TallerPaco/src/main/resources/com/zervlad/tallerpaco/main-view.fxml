@@ -18,48 +18,16 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+fx:controller="com.zervlad.tallerpaco.Controllers.MainController">
    <center>
-       <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+       <TabPane
+               fx:id="tabPane" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
            <Tab text="Modelos de Coche">
-               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
-                   <VBox prefHeight="406.0" prefWidth="700.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
-                         AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                       <ToolBar nodeOrientation="RIGHT_TO_LEFT" prefHeight="40.0" prefWidth="200.0">
-                           <Button fx:id="addCarBrandButton" mnemonicParsing="false" text="Añadir"/>
-                           <TextField fx:id="searchCarBrand" alignment="CENTER_RIGHT" promptText="Buscar"/>
-                       </ToolBar>
-                       <ListView fx:id="model_car_list_view">
-                           <cursor>
-                               <Cursor fx:constant="HAND"/>
-                           </cursor>
-                       </ListView>
-                   </VBox>
-               </AnchorPane>
+               <fx:include source="carbrand/car-brand-view.fxml"/>
            </Tab>
            <Tab text="Vehiculos">
-               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
-                   <VBox prefHeight="406.0" prefWidth="700.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
-                         AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                       <ToolBar nodeOrientation="RIGHT_TO_LEFT" prefHeight="40.0" prefWidth="200.0">
-                           <Button fx:id="addBrandButton" mnemonicParsing="false" text="Añadir"/>
-                           <TextField fx:id="searchBrandTextField" alignment="CENTER_RIGHT"
-                                      promptText="Buscar"/>
-                       </ToolBar>
-                       <TableView fx:id="brandTable">
-                           <columns>
-                               <TableColumn editable="false" maxWidth="50.0" prefWidth="50.0" resizable="false"
-                                            text="Id"/>
-                               <TableColumn maxWidth="100.0" minWidth="100.0" prefWidth="100.0" text="Marca"/>
-                               <TableColumn maxWidth="70.0" minWidth="70.0" prefWidth="70.0" text="Año"/>
-                               <TableColumn maxWidth="150.0" minWidth="150.0" prefWidth="150.0" text="Matricula"/>
-                               <TableColumn maxWidth="75.0" minWidth="75.0" prefWidth="75.0" text="Recorrido"/>
-                               <TableColumn maxWidth="1.7976931348623157E308" minWidth="-Infinity" resizable="false"
-                                            text="Dueño"/>
-                           </columns>
-                       </TableView>
-                   </VBox>
-               </AnchorPane>
+               <fx:include source="car/car-view.fxml" />
            </Tab>
            <Tab text="Clientes">
                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
